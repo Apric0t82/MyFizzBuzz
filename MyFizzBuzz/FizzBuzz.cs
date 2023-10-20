@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace MyFizzBuzz
+namespace Algorithms
 {
     public class FizzBuzz
     {

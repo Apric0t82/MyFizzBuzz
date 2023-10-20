@@ -1,4 +1,4 @@
-﻿namespace MyFizzBuzz
+﻿namespace Algorithms
 {
     public class Program
     {
