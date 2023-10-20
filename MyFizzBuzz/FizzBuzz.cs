@@ -25,8 +25,6 @@ namespace Algorithms
                     Console.WriteLine(i);
                 }
             }
-
-            Console.ReadLine();
         }
     }
 }
