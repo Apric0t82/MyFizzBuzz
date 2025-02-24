@@ -10,7 +10,7 @@ namespace Algorithms
         public void RunFizzBuzzTests()
         {
             // Arrange
-            var fizzBuzz = new FizzBuzz();
+            var fizzBuzz = new FizzBuzzImperative();
             var output = new StringWriter();
             Console.SetOut(output);
 

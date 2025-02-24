@@ -13,7 +13,7 @@ namespace Algorithms
         static void PrintFizzBuzz()
         {
             Console.WriteLine("FizzBuzz using Imperative Programming");
-            var fb = new FizzBuzz();
+            var fb = new FizzBuzzImperative();
             fb.SolveFizzBuzz(20);
             Console.WriteLine();
         }
