@@ -7,16 +7,20 @@ namespace Algorithms
     {
         public void SolveFizzBuzz(int number)
         {
-            var results = Enumerable.Range(1, number)
-                .Select(i => (i % 3 == 0 && i % 5 == 0) ? "fizzbuzz" :
-                             (i % 3 == 0) ? "fizz" :
-                             (i % 5 == 0) ? "buzz" :
-                             i.ToString());
+            string FizzBuzz(int x) =>
+                (x % 3 == 0, x % 5 == 0) switch
+                {
+                    (true, true) => "fizzbuzz",
+                    (true, _) => "fizz",
+                    (_, true) => "buzz",
+                    _ => x.ToString()
+                };
 
-            foreach (var result in results)
-            {
-                Console.WriteLine(result);
-            }
+            Enumerable.Range(1, number)
+                .Select(FizzBuzz)
+                .ToList()
+                .ForEach(Console.WriteLine);
+            
         }
     }
 }
