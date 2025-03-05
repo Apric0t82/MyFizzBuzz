@@ -12,7 +12,7 @@ namespace Algorithms
             }
         }
 
-        private static string FizzBuzz(int i)
+        public static string FizzBuzz(int i)
         {
             if (i % 3 == 0 && i % 5 == 0)
             {
